@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <h1 class="row justify-content-center">Calculator</h1>
+  <form class="row justify-content-center" action="calculator" method="post">
+      <table>
+          <tr>
+              <td>Enter First Number: </td>
+              <td><input class="form-control" type="text" name="first_num" placeholder="i.e. 123"> </td>
+          </tr>
+          <tr>
+              <td>Enter Second Number: </td>
+              <td><input class="form-control" type="text" name="second_num" placeholder="i.e. 123"> </td>
+          </tr>
+          <tr>
+              <td>Operation:  </td>
+              <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" type="radio" id="add" name="operation" value="+">
+                      <label class="custom-control-label" for="add">+</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" type="radio" id="minus" name="operation" value="-">
+                      <label class="custom-control-label" for="minus">-</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" type="radio" id="multiply" name="operation" value="*">
+                      <label class="custom-control-label" for="multiply">*</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" type="radio" id="divide" name="operation" value="/">
+                      <label class="custom-control-label" for="divide">/</label>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+              <td>Enter Operation:  </td>
+              <td colspan="2"><input class="btn btn-primary btn-block" type="submit" value="Enter"></td>
+          </tr>
+          <tr>
+            <td>Answer: </td>
+            <td><input class="form-control" type="text" name="result"> </td>
+          </tr>
+      </table>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

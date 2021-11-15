@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class ="wrapper ">
+        <h1 class="row justify-content-center">Registration Form</h1>
+        <form class="row justify-content-center" action="register" method="post">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input class="form-control" type="text" name="user_name" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input class="form-control" type="text" name="user_email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>User Id</td>
+                    <td><input class="form-control" type="text" name="user_id" placeholder="User Id"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input class="form-control" type="password" name="user_password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="USA" name="user_country" value="USA">
+                            <label class="custom-control-label" for="USA">USA</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="UK" name="user_country" value="UK">
+                            <label class="custom-control-label" for="UK">UK</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="CA" name="user_country" value="CA">
+                            <label class="custom-control-label" for="CA">CA</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="Male" name="user_gender" value="Male">
+                            <label class="custom-control-label" for="Male">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="Female" name="user_gender" value="Female">
+                            <label class="custom-control-label" for="Female">Female</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input class="custom-control-input" type="radio" id="NA" name="user_gender" value="Prefer not to say">
+                            <label class="custom-control-label" for="NA">Prefer not to say</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language </td>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="English" name="user_language" value="English">
+                            <label class="custom-control-label" for="English">English</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Spanish" name="user_language" value="Spanish">
+                            <label class="custom-control-label" for="Spanish">Spanish</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Chinese" name="user_language" value="Chinese">
+                            <label class="custom-control-label" for="Chinese">Chinese</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="French" name="user_language" value="French">
+                            <label class="custom-control-label" for="French">French</label>
+                        </div>
+                        <br>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Vietnamese" name="user_language" value="Vietnamese">
+                            <label class="custom-control-label" for="Vietnamese">Vietnamese</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Portuguese" name="user_language" value="Portuguese">
+                            <label class="custom-control-label" for="Portuguese">Portuguese</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Italian" name="user_language" value="Italian">
+                            <label class="custom-control-label" for="Italian">Italian</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                            <input class="custom-control-input" type="checkbox" id="Other" name="user_language" value="Other">
+                            <label class="custom-control-label" for="Other">Other</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>About</td>
+                    <td>
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" row="3" id="About" name="user_about"></textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="btn btn-primary btn-block" type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
