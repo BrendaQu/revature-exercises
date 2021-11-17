@@ -1,0 +1,42 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <servlet-class>org.example.AddEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <url-pattern>/AddEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <servlet-class>org.example.UpdateEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <url-pattern>/UpdateEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <servlet-class>org.example.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <url-pattern>/DeleteEmployeeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewListServlet</servlet-name>
+        <servlet-class>org.example.ViewListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewListServlet</servlet-name>
+        <url-pattern>/ViewListServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
